@@ -1,0 +1,203 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+    text-align: center;
+  }
+  
+  div {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+  }
+  
+  input {
+    display: block;
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  input:focus {
+    border-color: #007bff;
+    outline: none;
+  }
+  
+  button {
+    display: block;
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  button:nth-child(1) {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  button:nth-child(1):hover {
+    background-color: #0056b3;
+  }
+  
+  button:nth-child(2) {
+    background-color: #28a745;
+    color: #fff;
+  }
+  
+  button:nth-child(2):hover {
+    background-color: #1e7e34;
+  }
+  
+  p {
+    color: red;
+    font-size: 0.9rem;
+    text-align: center;
+    margin-top: -0.5rem;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    div {
+      padding: 1.5rem;
+      width: 100%;
+    }
+  
+    h2 {
+      font-size: 1.5rem;
+    }
+  
+    input, button {
+      font-size: 0.9rem;
+      padding: 0.7rem;
+    }
+
+    
+  }
+  
+  @media (max-width: 480px) {
+    h2 {
+      font-size: 1.2rem;
+    }
+  
+    input, button {
+      font-size: 0.8rem;
+      padding: 0.6rem;
+    }
+  }
+  
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    background: #f9f9f9;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    word-wrap: break-word; 
+    word-break: break-word;
+  }
+  
+  li:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .task-content {
+    flex-grow: 1; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
+    white-space: nowrap; 
+    word-break: break-word;
+    display: block;
+  }
+  
+  .task-content.multiline {
+    white-space: normal; 
+    display: -webkit-box; 
+    -webkit-line-clamp: 3; 
+    -webkit-box-orient: vertical; 
+    overflow: hidden;
+  }
+  
+  button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    flex-shrink: 0; 
+  }
+  
+  button:hover {
+    opacity: 0.9;
+  }
+  
+  button:active {
+    transform: scale(0.98);
+  }
+  
+  @media (max-width: 768px) {
+    li {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .task-content {
+      white-space: normal; 
+    }
+  
+    button {
+      width: 100%;
+      margin: 5px 0;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    li {
+      padding: 12px;
+    }
+  
+    .task-content {
+      font-size: 14px; 
+    }
+  
+    button {
+      font-size: 12px; 
+    }
+  }
+  
